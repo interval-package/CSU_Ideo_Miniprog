@@ -1,0 +1,18 @@
+<!--pages/resultPage/resultPage.wxml-->
+  <view class="container">
+    <mp-cells ext-class="my-cells" title="这里是答案" footer="到这里了">
+      <view class="problem" wx:for="{{questionaire[0].questions}}" wx:key="id">
+        <view>
+            <mp-icon type="outline" icon="star" color="red" size="{{5}}"></mp-icon>
+            <text>{{"# "+item.title+":"}}</text>
+        </view>
+        <mp-cell wx:for="{{item.ans}}" wx:key="subId">
+          <view slot="icon">
+            <mp-icon type="field" icon="star" color="red" size="{{30}}"></mp-icon>
+          </view>
+          <view>{{item[0]}}</view>
+          <view slot="footer">分值是：{{item[1]}}</view>
+        </mp-cell>
+      </view>
+  </mp-cells>
+</view>

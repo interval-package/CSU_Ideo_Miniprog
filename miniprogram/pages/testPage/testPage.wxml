@@ -1,0 +1,20 @@
+<!--pages/testPage/testPage.wxml-->
+<text>下面开始答题：</text>
+  <view class="container">
+    <mp-cells ext-class="my-cells" title="这里是题目" footer="到这里了">
+    <form catchsubmit="submit">
+      <view class="problem" wx:for="{{questionaire[0].questions}}" wx:key="id">
+        <view>
+          <mp-icon type="outline" icon="star" color="red" size="{{20}}"></mp-icon>
+          <text>{{"# "+item.title+":"}}</text>
+        </view>
+          <radio-group class="choice" name='id'>
+            <label wx:for="{{item.ans}}" wx:key="subId"><radio value="{{item[1]}}"/>{{item[0]}}</label>
+          </radio-group>
+      </view>
+        <button type="primary" form-type="susbmit" bindtap="submit">
+          提交！
+        </button>
+    </form>
+  </mp-cells>
+</view>

@@ -1,0 +1,83 @@
+page{
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: bottom;
+  background-position-x: left;
+  background-image: url('https://636c-cloud1-0g744h816319c402-1307731055.tcb.qcloud.la/background/pics_01/%E5%9B%BE%E7%89%871.png?sign=6d6b609ae5552a81d1c8309c0bcc8ff3&t=1635580246'); 
+}
+
+.container:last-child {
+  margin-bottom: calc( var(--footer-height) + 24px );
+}
+
+.background {
+  width: 80vw;
+  margin-top: 12vh;
+}
+
+.title {
+  margin-top: 48px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.subtitle {
+  margin-top: 9px;
+  font-size: 14px;
+}
+
+.form-cell {
+  padding: 0;
+}
+
+.slide {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: relative;
+}
+
+.checkbox {
+  width: 24px;
+  height: 24px;
+  border-radius: 12px;
+  align-self: flex-start;
+  transform: translateY(5px);
+}
+
+.todo-info {
+  width: auto;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column
+}
+
+.todo-info_title {
+  font-size: 17px;
+}
+
+.todo-info_desc {
+  font-size: 17px;
+  color: #BDBDBD;
+}
+
+.star {
+  width: 25px;
+  height: 36px;
+  position: absolute;
+  right: 42px;
+  top: 0;
+}
+
+.starBtn .weui-slideview__btn {
+  background-color: gold;
+}
+
+.file {
+  width: 25px;
+  height: 25px;
+  margin-left: auto;
+  margin-right: 22px;
+}

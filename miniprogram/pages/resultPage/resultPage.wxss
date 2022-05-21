@@ -1,0 +1,32 @@
+/* pages/resultPage/resultPage.wxss */
+page{
+  background-size: 100% 100%;
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  background-position-y: bottom;
+  background-position-x: right;
+  background-image: url('https://636c-cloud1-0g744h816319c402-1307731055.tcb.qcloud.la/background/pics_01/%E5%9B%BE%E7%89%873.png?sign=9ad195ba4e01c3b6d4a159dfabee4658&t=1635666364');
+}
+
+.my-cells{
+  width: 95vw;
+}
+
+.problem{
+  display: flex;
+  flex-direction: column;
+  align-self: start;
+  padding: 10px;
+}
+.container{
+  padding: 10px;
+}
+.choice{
+  display: flex;
+  flex-direction: column;
+}
+
+label{
+  padding: 5px;
+}

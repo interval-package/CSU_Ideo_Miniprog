@@ -1,0 +1,38 @@
+{
+  "pages": [
+    "pages/eventList/eventList",
+    "pages/eventPage/evenPage",
+    "pages/testPage/testPage",
+    "pages/resultPage/resultPage",
+    "pages/videoPage/videoPage"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#d45434",
+    "navigationBarTitleText": "长沙de近代史",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#ffffff",
+    "selectedColor": "#111111",
+    "borderStyle": "white",
+    "backgroundColor": "#d45434",
+    "list": [
+      {
+        "pagePath": "pages/eventList/eventList",
+        "iconPath": "images/too_01.png",
+        "selectedIconPath": "images/too_03.png",
+        "text": "学习面板"
+      },
+      {
+        "pagePath": "pages/eventPage/evenPage",
+        "iconPath": "images/too_01.png",
+        "selectedIconPath": "images/too_03.png",
+        "text": "更多信息"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

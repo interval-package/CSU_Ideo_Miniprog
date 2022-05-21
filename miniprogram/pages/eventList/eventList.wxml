@@ -1,0 +1,21 @@
+<!--pages/eventList/eventList.wxml-->
+
+<view class="container">
+  <view class="form-group_label">
+    已经有的项目！
+    <mp-badge content="{{times}}" style="margin-left: 5px;" />
+  </view>
+  <view class="form-group">
+    <view class="form-cell" wx:for="{{events}}" wx:key="index">
+      <mp-slideview buttons="{{slideButtons}}" data-index="{{index}}" bindbuttontap="slideButtonTap">
+        <view class="slide" data-index="{{index}}" bindtap="toStudyPage">
+          <image class="checkbox" src="../../images/list/pending.png"/>
+          <view class="todo-info">
+            <view class="todo-info_title">{{item.name}}</view>
+            <view class="todo-info_desc">{{item.description}}</view>
+          </view>
+        </view>
+      </mp-slideview>
+    </view>
+  </view>
+</view>

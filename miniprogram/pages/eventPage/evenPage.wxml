@@ -1,0 +1,58 @@
+<!--pages/eventPage/evenPage.wxml-->
+<view class="container">
+  <mp-cells ext-class="my-cells" title="功能目录" footer="到这里了">
+    <mp-cell  hover="true" bindtap="unMadeFun">
+      <view slot="icon">
+        <mp-icon type="field" icon="add" color="red" size="{{30}}"></mp-icon>
+      </view>
+      <view>添加信息</view>
+      <view slot="footer">可以添加内容到小程序</view>
+    </mp-cell>
+    <mp-cell hover="true" bindtap="unMadeFun">
+      <view slot="icon">
+        <mp-icon type="field" icon="me" color="black" size="{{30}}"></mp-icon>
+      </view>
+      <view>我的信息</view>
+      <view slot="footer">查看我的信息</view>
+    </mp-cell>
+    <mp-cell hover="true" bindtap="unMadeFun">
+      <view slot="icon">
+        <mp-icon type="field" icon="star" color="yellow" size="{{30}}"></mp-icon>
+      </view>
+      <view>我的资料</view>
+      <view slot="footer">查看我的资料</view>
+    </mp-cell>
+</mp-cells>
+<view class="form-group">
+    <view class="form-cell">
+      <mp-slideview buttons="{{slideButtons}}" data-index="{{index}}" bindbuttontap="unMadeFun">
+        <view class="slide" data-index="{{index}}" bindtap="toStudyPage">
+          <image class="checkbox" src="../../images/list/pending.png"/>
+          <view class="todo-info">
+            <view class="todo-info_title">我的成就</view>
+            <view class="todo-info_desc">向右划开有惊喜哦</view>
+          </view>
+        </view>
+      </mp-slideview>
+      <mp-slideview buttons="{{slideButtons}}" data-index="{{index}}" bindbuttontap="unMadeFun">
+        <view class="slide" data-index="{{index}}" bindtap="toVideoPage">
+          <image class="checkbox" src="../../images/list/pending.png"/>
+          <view class="todo-info">
+            <view class="todo-info_title">看看视频</view>
+            <view class="todo-info_desc">向右划开有惊喜哦</view>
+          </view>
+        </view>
+      </mp-slideview>
+      <mp-slideview buttons="{{slideButtons}}" data-index="{{index}}" bindbuttontap="unMadeFun">
+        <view class="slide" data-index="{{index}}" bindtap="toStudyPage">
+          <image class="checkbox" src="../../images/list/pending.png"/>
+          <view class="todo-info">
+            <view class="todo-info_title">学习资料</view>
+            <view class="todo-info_desc">向右划开有惊喜哦</view>
+          </view>
+        </view>
+      </mp-slideview>
+    </view>
+  </view>
+</view>
+
